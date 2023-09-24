@@ -1,0 +1,50 @@
+---
+title: "Assignment 6 _ Nabizadeh _ Tahereh"
+author: "Tahereh Nabizadeh"
+date: "2023-09-23"
+output: word_document
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Create an R package that includes two functions to perform the following tasks. All of your functions should be written clearly, with commented code, readable spacing, and be as non-repetitive as possible. Document your functions using Roxygen2 syntax. The Pythagorean theorem states that the square of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the other two side: . Write a function that, given the lengths of two sides of the triangle, calculates the length of the third side. Note: This function should be flexible - that is, the function works if I give it values for and , or and , or and . If the user only provides the length of one side, the function should throw an error. Likewise, if the user provides the lengths of all three sides, the function should throw an error. If the user provides any values other than numeric values, the function should throw an error.
+
+```{r}
+pythag <- function(a,b){
+  if(is.numeric(a) == FALSE | is.numeric(b) == FALSE){return('I need numeric values to make this work')}
+  if(a > 0 & b > 0){return(sqrt((a^2)+(b^2)))}
+  else{return('Values Need to be Positive')}
+}
+
+pythag(4,5)
+```
+
+### Question: Write your own trimmed mean function that calculates the mean of a numeric vector ignoring the smallest and l largest values (this is a trimmed mean). Note: Your function should check if xhas at least s+l+1+1 values. If not, return some error message with stop().
+
+### *Answer:* To find a trimming mean involves temporarily ignoring the highest and lowest t% of a sample. The example below shows a 10% trimmed mean takes the mean of values between quantiles 0.1 and 0.90.
+
+```{r}
+
+library(trimr)
+
+trimming <- function(x){
+  if(length(data)>2){return(print(mean(data,trim=0.10)))}
+  else{return("length of data should be bigger than two")}
+}
+
+# Example
+
+data=c(1:46)
+trimming(data)
+```
+
+# **GitHub**
+
+### Question: Install Git, and create a Github account. Update your Github profile to include some relevant information about yourself, such as your program and/or interests. Submit the link to your profile.
+
+### *Answer*: <https://github.com/thrhnabizadeh>
