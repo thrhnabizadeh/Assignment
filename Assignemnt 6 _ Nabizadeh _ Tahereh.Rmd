@@ -48,3 +48,20 @@ trimming(data)
 ### Question: Install Git, and create a Github account. Update your Github profile to include some relevant information about yourself, such as your program and/or interests. Submit the link to your profile.
 
 ### *Answer*: <https://github.com/thrhnabizadeh>
+
+## Question: Create a repository out of the R package you created in Homework 6. Add all your files, push to GitHub. Make sure your package can be installed from GitHub (Hint: `devtools::install_github()`). Submit the link to your repository.
+
+### *Answer*: To do this task, I made a new repository on my github under the name assignment, and then commit all my codes to the new repository (Assignment), and made it public to be visible to everyone. Then on my r studio I made a new package repository under the name Assignment, and then from Git, I used shell and put the codes from crrent repository into the the shell, then commit and pushed the codes into the github. I used devtools:: install.github to install and run my package into the r studio.
+
+<https://github.com/thrhnabizadeh/Assignment>
+
+## **Question: In the command line, go to the hidden. git folder, list all files/folders. Describe and submit your observations.**
+
+### ***Answer:*** In my package repository on my r studio on the terminal section of this repository, I type
+
+IS -a  
+
+I see these results (hidden files and folders).
+
+![Picture of my
+repository](C:/Users/thrhn/Desktop/First%20semester/Biostatistical%20Computing%20with%20R/picture1.png)
